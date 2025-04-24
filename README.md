@@ -139,15 +139,9 @@ ORDER BY total_profit DESC;
 - **T-SQL** for querying
 - **CSV and ADO.NET** data sources
 
-📦 CORS-DataWarehouse/
-├── README.md
-├── DimCustomer.png
-├── DimDate.png
-├── DimLocation.png
-├── DimOrders.png
-├── DimProduct.png
-├── DimSuppliers.png
-├── Dimensional Model 2.0.png
-└── FactOrderItem.png
+
+
+### 👨‍💼 Author
+[yxiao66666](https://www.linkedin.com/in/yang~xiao/) 
 
 
