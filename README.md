@@ -21,7 +21,7 @@ Crocoroos’s Online Retail Store (CORS) is a specialized e-commerce business se
 The data warehouse follows a **star schema** model with a central fact table and multiple dimension tables. The granularity of the fact table is at the **order item level**.
 
 ### 🌟 Dimensional Model
-<img src="Images/DimensionalModel.png" alt="Dimensional Model" style="max-width: 50%; height: auto;" />
+<img src="Images/DimensionalModel.png" alt="Dimensional Model" style="width: 50%;" />
 
 ---
 
