@@ -1,0 +1,7 @@
+SELECT TOP (1000) [customer_key]
+      ,[customer_id]
+      ,[location_id]
+      ,[name]
+      ,[email_address]
+      ,[created_date]
+  FROM [s4682884_cors_dw].[dbo].[DimCustomer]

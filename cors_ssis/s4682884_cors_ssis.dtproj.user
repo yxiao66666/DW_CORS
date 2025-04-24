@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataTransformationsUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <AssessmentRuleSuppressionSetting />
+        <UseWinAuth>false</UseWinAuth>
+        <WinAuthUserName />
+        <WinAuthDomain />
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>{16403305-4B90-4D31-A88F-684CBB6D63D6}</Id>
+            <Name>{16403305-4B90-4D31-A88F-684CBB6D63D6}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAhs0CTu7hxEaP29xU17YqhQAAAABOAAAAewAxADYANAAwADMAMwAwADUALQA0AEIAOQAwAC0ANABEADMAMQAtAEEAOAA4AEYALQA2ADgANABDAEIAQgA2AEQANgAzAEQANgB9AAAAA2YAAMAAAAAQAAAAv+dKB02s5s7fXO6bBHt+XgAAAAAEgAAAoAAAABAAAADjueRdR35X/jcHbbrseEP8CAAAAOhWQHt7iOHcFAAAAB8BNAW+pfHgUCBg4bCEaKhdfnKs</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>{16403305-4B90-4D31-A88F-684CBB6D63D6}</Id>
+            <Name>{16403305-4B90-4D31-A88F-684CBB6D63D6}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAhs0CTu7hxEaP29xU17YqhQAAAABOAAAAewAxADYANAAwADMAMwAwADUALQA0AEIAOQAwAC0ANABEADMAMQAtAEEAOAA4AEYALQA2ADgANABDAEIAQgA2AEQANgAzAEQANgB9AAAAA2YAAMAAAAAQAAAAcimmaTy3GDecP3i17TfRWAAAAAAEgAAAoAAAABAAAACz9WuLGiBqcoy9BA+ADSh0EAAAAJtvWRtPlt6OgTWTMSSRBQUUAAAA88uAtxgGmfBeV41TxbCBbv8Ct3k=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <OfflineMode>false</OfflineMode>
+        <ProgressReporting>true</ProgressReporting>
+        <ParameterConfigurationSensitiveValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2025-04-14T11:54:06.2338525Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationSensitiveValues>
+      </Options>
+    </Configuration>
+  </Configurations>
+</DataTransformationsUserConfiguration>
