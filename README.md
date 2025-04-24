@@ -30,7 +30,7 @@ The data warehouse follows a **star schema** model with a central fact table and
 ### 🧍‍♂️ DimCustomer
 Contains information about CORS customers including region and demographic attributes.
 
-![DimCustomer](DimCustomer.png)
+![DimCustomer](Images/DimCustomer.png)
 
 ---
 
