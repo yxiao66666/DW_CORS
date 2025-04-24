@@ -22,9 +22,7 @@ The data warehouse follows a **star schema** model with a central fact table and
 
 ### 🌟 Dimensional Model
 
-<div style="text-align: center;">
-  <img src="Images/DimensionalModel.png" alt="Dimensional Model" style="width: 70%;" />
-</div>
+<img src="Images/DimensionalModel.png" alt="Dimensional Model" style="width: 70%;" />
 
 ---
 
@@ -132,4 +130,24 @@ WHERE l.state IS NOT NULL
 GROUP BY l.state
 ORDER BY total_profit DESC;
 ```
+
+
+### 📦 Technologies Used
+
+- **SQL Server 2019**
+- **SSIS in Visual Studio**
+- **T-SQL** for querying
+- **CSV and ADO.NET** data sources
+
+📦 CORS-DataWarehouse/
+├── README.md
+├── DimCustomer.png
+├── DimDate.png
+├── DimLocation.png
+├── DimOrders.png
+├── DimProduct.png
+├── DimSuppliers.png
+├── Dimensional Model 2.0.png
+└── FactOrderItem.png
+
 
