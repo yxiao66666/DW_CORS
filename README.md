@@ -90,9 +90,42 @@ Data from Amazon (in CSV and database formats) is extracted, cleaned, transforme
 ## 📌 Sample Analytical Queries
 
 ```sql
--- Top 5 best-selling products by revenue
-SELECT TOP 5 P.ProductName, SUM(F.SalesAmount) AS Revenue
-FROM FactOrderItem F
-JOIN DimProduct P ON F.ProductKey = P.ProductKey
-GROUP BY P.ProductName
-ORDER BY Revenue DESC;
+-- The five biggest customers in Australia
+SELECT TOP 5 c.customer_id, c.name AS customer_name, SUM(f.sales_price * f.item_quantity) AS total_spent
+FROM dbo.FactOrderItem f
+JOIN dbo.DimCustomer c 
+ON f.customer_key = c.customer_key
+JOIN dbo.DimLocation l 
+ON f.location_key = l.location_key
+WHERE l.country = 'au'
+GROUP BY c.customer_id, c.name
+ORDER BY total_spent DESC;
+
+
+```sql
+-- The total monthly revenue from New Zealand
+SELECT d.month, d.year, SUM(f.sales_price * f.item_quantity) AS total_monthly_revenue, l.country
+FROM dbo.FactOrderItem f
+JOIN dbo.DimCustomer c 
+ON f.customer_key = c.customer_key
+JOIN dbo.DimDate d 
+ON f.date_key = d.date_key
+JOIN dbo.DimLocation l 
+ON f.location_key = l.location_key
+WHERE l.country = 'nz'
+AND d.month IS NOT NULL
+AND d.year IS NOT NULL
+GROUP BY d.year, d.month, l.country
+ORDER BY d.year, d.month;
+
+```sql
+-- The most profitable territories over the year
+SELECT l.state, SUM(f.profit_margin) AS total_profit
+FROM dbo.FactOrderItem f
+JOIN dbo.DimLocation l 
+ON f.location_key = l.location_key
+WHERE l.state IS NOT NULL
+GROUP BY l.state
+ORDER BY total_profit DESC;
+
+
