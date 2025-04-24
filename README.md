@@ -21,7 +21,7 @@ Crocoroos’s Online Retail Store (CORS) is a specialized e-commerce business se
 The data warehouse follows a **star schema** model with a central fact table and multiple dimension tables. The granularity of the fact table is at the **order item level**.
 
 ### 🌟 Dimensional Model
-![Dimensional Model](Images/DimensionalModel.png)
+<img src="Images/DimensionalModel.png" alt="Dimensional Model" style="max-width: 50%; height: auto;" />
 
 ---
 
@@ -100,7 +100,7 @@ ON f.location_key = l.location_key
 WHERE l.country = 'au'
 GROUP BY c.customer_id, c.name
 ORDER BY total_spent DESC;
-
+```
 
 ```sql
 -- The total monthly revenue from New Zealand
@@ -117,6 +117,7 @@ AND d.month IS NOT NULL
 AND d.year IS NOT NULL
 GROUP BY d.year, d.month, l.country
 ORDER BY d.year, d.month;
+```
 
 ```sql
 -- The most profitable territories over the year
@@ -127,5 +128,5 @@ ON f.location_key = l.location_key
 WHERE l.state IS NOT NULL
 GROUP BY l.state
 ORDER BY total_profit DESC;
-
+```
 
