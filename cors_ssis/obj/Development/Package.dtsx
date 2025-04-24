@@ -4,7 +4,7 @@
   DTS:CreationDate="4/14/2025 8:49:34 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DW-Stud-SS-03A"
-  DTS:CreatorName="UQ\s4682884"
+  DTS:CreatorName="UQ\Yang Xiao"
   DTS:DTSID="{F5E14B0A-99C4-4311-AB7A-7711DB26D170}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5685.0"
@@ -17,13 +17,13 @@
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
+      DTS:refId="Package.ConnectionManagers[localhost.cors_dw.sa]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
       DTS:DTSID="{0E195A2F-6D6C-460D-8DB1-93AEAF905EC8}"
-      DTS:ObjectName="localhost.s4682884_cors_dw.sa">
+      DTS:ObjectName="localhost.cors_dw.sa">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=s4682884_cors_dw;Persist Security Info=True;Encrypt=False;TrustServerCertificate=True;Application Name=SSIS-Package-{0E195A2F-6D6C-460D-8DB1-93AEAF905EC8}localhost.s4682884_cors_dw.sa;">
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=cors_dw;Persist Security Info=True;Encrypt=False;TrustServerCertificate=True;Application Name=SSIS-Package-{0E195A2F-6D6C-460D-8DB1-93AEAF905EC8}localhost.cors_dw.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
@@ -32,15 +32,15 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
+      DTS:refId="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{07AE1C4F-488D-4ED3-8883-6BB3942C46F2}"
-      DTS:ObjectName="localhost.s4682884_cors_dw.sa 1">
+      DTS:ObjectName="localhost.cors_dw.sa 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=s4682884_cors_dw;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{07AE1C4F-488D-4ED3-8883-6BB3942C46F2}localhost.s4682884_cors_dw.sa 1;">
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=cors_dw;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{07AE1C4F-488D-4ED3-8883-6BB3942C46F2}localhost.cors_dw.sa 1;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
@@ -316,8 +316,8 @@
               <connections>
                 <connection
                   refId="Package\create customer dimension\DimCustomer.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -755,8 +755,8 @@ FROM dbo.orders</property>
               <connections>
                 <connection
                   refId="Package\create date dimension\DimDate.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -1380,8 +1380,8 @@ FROM dbo.orders</property>
               <connections>
                 <connection
                   refId="Package\create location dimension\DimLocation.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -1841,8 +1841,8 @@ FROM dbo.orders</property>
               <connections>
                 <connection
                   refId="Package\create orders dimension\DimOrders.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -2301,8 +2301,8 @@ FROM dbo.orders</property>
               <connections>
                 <connection
                   refId="Package\create product dimension\DimProduct.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -4252,8 +4252,8 @@ FROM dbo.orders</property>
               <connections>
                 <connection
                   refId="Package\create suppliers dimension\DimSuppliers.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -4544,8 +4544,8 @@ FROM dbo.orders</property>
               <connections>
                 <connection
                   refId="Package\order item fact table\FactOrderItem.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4814,8 +4814,8 @@ where [refTable].[customer_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\order item fact table\Lookup - DimCustomer - customer_key.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -4988,8 +4988,8 @@ where [refTable].[full_date] = ?</property>
               <connections>
                 <connection
                   refId="Package\order item fact table\Lookup - DimDate - date_key.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5147,8 +5147,8 @@ where [refTable].[location_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\order item fact table\Lookup - DimLocation - location_key.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5306,8 +5306,8 @@ where [refTable].[order_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\order item fact table\Lookup - DimOrders - order_key.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5495,8 +5495,8 @@ where [refTable].[product_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\order item fact table\Lookup - DimProduct - product_key.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
@@ -5668,8 +5668,8 @@ where [refTable].[supplier_id] = ?</property>
               <connections>
                 <connection
                   refId="Package\order item fact table\Lookup - DimSuppliers - suppliers_key.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.s4682884_cors_dw.sa 1]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.cors_dw.sa 1]"
                   description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
