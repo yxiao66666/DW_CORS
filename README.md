@@ -131,6 +131,7 @@ GROUP BY l.state
 ORDER BY total_profit DESC;
 ```
 
+---
 
 ### 📦 Technologies Used
 
@@ -139,7 +140,7 @@ ORDER BY total_profit DESC;
 - **T-SQL** for querying
 - **CSV and ADO.NET** data sources
 
-
+---
 
 ### 👨‍💼 Author
 [yxiao66666](https://www.linkedin.com/in/yang~xiao/) 
