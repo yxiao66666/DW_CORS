@@ -21,7 +21,7 @@ Crocoroos’s Online Retail Store (CORS) is a specialized e-commerce business se
 The data warehouse follows a **star schema** model with a central fact table and multiple dimension tables. The granularity of the fact table is at the **order item level**.
 
 ### 🌟 Dimensional Model 2.0
-![Dimensional Model](Dimensional%20Model%202.0.png)
+![Dimensional Model](Images/Dimensional Model 2.0.png)
 
 ---
 
@@ -37,35 +37,35 @@ Contains information about CORS customers including region and demographic attri
 ### 📅 DimDate
 A date dimension table used to analyze data over time (daily, monthly, quarterly, yearly).
 
-![DimDate](DimDate.png)
+![DimDate](Images/DimDate.png)
 
 ---
 
 ### 📍 DimLocation
 Represents geographic data for customers and suppliers to assist in warehouse and logistics planning.
 
-![DimLocation](DimLocation.png)
+![DimLocation](Images/DimLocation.png)
 
 ---
 
 ### 📦 DimOrders
 Captures metadata related to customer orders.
 
-![DimOrders](DimOrders.png)
+![DimOrders](Images/DimOrders.png)
 
 ---
 
 ### 🎮 DimProduct
 Holds product-related data including category and pricing.
 
-![DimProduct](DimProduct.png)
+![DimProduct](Images/DimProduct.png)
 
 ---
 
 ### 🏭 DimSuppliers
 Information about suppliers from whom products are bulk purchased.
 
-![DimSuppliers](DimSuppliers.png)
+![DimSuppliers](Images/DimSuppliers.png)
 
 ---
 
@@ -74,7 +74,7 @@ Information about suppliers from whom products are bulk purchased.
 ### 🧾 FactOrderItem
 Records detailed transaction-level data including sales amount, quantity, discounts, and profit.
 
-![FactOrderItem](FactOrderItem.png)
+![FactOrderItem](Images/FactOrderItem.png)
 
 ---
 
